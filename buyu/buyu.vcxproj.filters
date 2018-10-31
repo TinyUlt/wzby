@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Tools">
+      <UniqueIdentifier>{27deeba8-8581-4b31-bee0-7eeba239bfc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Tools">
+      <UniqueIdentifier>{6091cb82-8acd-4b0f-a957-85d5c9a38a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Logic">
+      <UniqueIdentifier>{ca8fa09c-9350-4c99-800a-b14d704d8254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Cache">
+      <UniqueIdentifier>{6811e482-a279-4e58-97b2-df0349941124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Cache">
+      <UniqueIdentifier>{3162f857-2f59-4926-9ee8-a5337f76f849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Global">
+      <UniqueIdentifier>{64c6cac7-737e-42f9-8c04-2f522cf27a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Global">
+      <UniqueIdentifier>{dd4722e0-f03d-42bb-9d1b-36dad893d1cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Tools\prebuilt">
+      <UniqueIdentifier>{6330817c-2233-4da9-85e3-4bf0d42b9517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models">
+      <UniqueIdentifier>{71aacadc-094c-4822-bae3-176bc6faa697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models\Item">
+      <UniqueIdentifier>{cc7ff1cd-53cc-4c4e-ada0-3d1f1311675f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Models">
+      <UniqueIdentifier>{c335330d-2399-400b-8bae-261a92f5a05d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Models\Item">
+      <UniqueIdentifier>{cfa77cce-382e-498b-aace-cebe23824e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models\Action">
+      <UniqueIdentifier>{2480012f-75db-4a20-ac97-99547836fa64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models\Action\Move">
+      <UniqueIdentifier>{4b10a84d-7073-4b5f-819c-e45f224043ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models\Foundation">
+      <UniqueIdentifier>{4f4daf06-3f2e-4c42-aaa5-4861a6de60b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Models\Action">
+      <UniqueIdentifier>{cd357d3f-2fb9-4fc0-b2d9-ada64fd0b5e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Models\Foundation">
+      <UniqueIdentifier>{8291a6e7-f984-4d41-82c3-eeec3e928da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\json">
+      <UniqueIdentifier>{e2d3107d-8d5a-46a7-bcb7-9615a852a925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models\Propety">
+      <UniqueIdentifier>{c15eaaaa-d62e-446a-af5f-6a61147cf9b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Models\Propety">
+      <UniqueIdentifier>{c29c42de-65f0-4c16-9aa8-51d2f7f186e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Models\Skill">
+      <UniqueIdentifier>{10d67370-00db-422d-82b5-38a9050df9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Models\Skill">
+      <UniqueIdentifier>{4f2f26da-16c4-4aaf-b4be-fb5cae828437}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>源文件\json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>源文件\json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>源文件\json</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpClient.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="gt_buyu.pb.cc">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryMath.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="gt_enum.pb.cc">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLogic.cpp">
+      <Filter>源文件\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>源文件\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterHelper.cpp">
+      <Filter>源文件\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="PathHelper.cpp">
+      <Filter>源文件\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="ScorePoolHelper.cpp">
+      <Filter>源文件\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="DelayTestLogic.cpp">
+      <Filter>源文件\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHelper.cpp">
+      <Filter>源文件\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Astar.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Nav.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyChan.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeController.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="LogSys.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleControl.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveModel.cpp">
+      <Filter>源文件\Models\Action\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowModel.cpp">
+      <Filter>源文件\Models\Action\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackModel.cpp">
+      <Filter>源文件\Models\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="SendModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientFrameModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletCache.cpp">
+      <Filter>源文件\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="BeatenModel.cpp">
+      <Filter>源文件\Models\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletModel.cpp">
+      <Filter>源文件\Models\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillHelper.cpp">
+      <Filter>源文件\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="FreedomModel.cpp">
+      <Filter>源文件\Models\Action\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnCache.cpp">
+      <Filter>源文件\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="FrozenModel.cpp">
+      <Filter>源文件\Models\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="ExperienceModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="EventNotifyModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PosModel.cpp">
+      <Filter>源文件\Models\Propety</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemCache.cpp">
+      <Filter>源文件\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemModel.cpp">
+      <Filter>源文件\Models\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueModel.cpp">
+      <Filter>源文件\Models\Propety</Filter>
+    </ClCompile>
+    <ClCompile Include="LVModel.cpp">
+      <Filter>源文件\Models\Propety</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MPModel.cpp">
+      <Filter>源文件\Models\Propety</Filter>
+    </ClCompile>
+    <ClCompile Include="FrozenSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillBaseModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="PoFuChenZhouSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="BaWangZhanSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="HealSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SpeedUpSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="DMGSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="MulSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="MulModel.cpp">
+      <Filter>源文件\Models\Propety</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreModel.cpp">
+      <Filter>源文件\Models\Propety</Filter>
+    </ClCompile>
+    <ClCompile Include="ChongFengXianZhenSkillModel.cpp">
+      <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="typedefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_batchallocator.h">
+      <Filter>源文件\json</Filter>
+    </ClInclude>
+    <ClInclude Include="PropHead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpResponse.h">
+      <Filter>头文件\Tools\prebuilt</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpRequest.h">
+      <Filter>头文件\Tools\prebuilt</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpClient.h">
+      <Filter>头文件\Tools\prebuilt</Filter>
+    </ClInclude>
+    <ClInclude Include="CCVector.h">
+      <Filter>头文件\Tools\prebuilt</Filter>
+    </ClInclude>
+    <ClInclude Include="gt_buyu.pb.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryMath.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gt_enum.pb.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterHelper.h">
+      <Filter>头文件\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>头文件\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="PathHelper.h">
+      <Filter>头文件\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="ScorePoolHelper.h">
+      <Filter>头文件\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHelper.h">
+      <Filter>头文件\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Astar.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Nav.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleControl.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="LogSys.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerEditControl.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeController.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyChan.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>头文件\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveModel.h">
+      <Filter>头文件\Models\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowModel.h">
+      <Filter>头文件\Models\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackModel.h">
+      <Filter>头文件\Models\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientFrameModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="SendModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletCache.h">
+      <Filter>头文件\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="BeatenModel.h">
+      <Filter>头文件\Models\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletModel.h">
+      <Filter>头文件\Models\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillHelper.h">
+      <Filter>头文件\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="FreedomModel.h">
+      <Filter>头文件\Models\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnCache.h">
+      <Filter>头文件\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="FrozenModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="ExperienceModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="EventNotifyModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemCache.h">
+      <Filter>头文件\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="PosModel.h">
+      <Filter>头文件\Models\Propety</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemModel.h">
+      <Filter>头文件\Models\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueModel.h">
+      <Filter>头文件\Models\Propety</Filter>
+    </ClInclude>
+    <ClInclude Include="LVModel.h">
+      <Filter>头文件\Models\Propety</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MPModel.h">
+      <Filter>头文件\Models\Propety</Filter>
+    </ClInclude>
+    <ClInclude Include="FrozenSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillBaseModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="PoFuChenZhouSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="BaWangZhanSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="HealSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SpeedUpSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="DMGSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="MulSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="MulModel.h">
+      <Filter>头文件\Models\Propety</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreModel.h">
+      <Filter>头文件\Models\Propety</Filter>
+    </ClInclude>
+    <ClInclude Include="ChongFengXianZhenSkillModel.h">
+      <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\json_internalarray.inl">
+      <Filter>源文件\json</Filter>
+    </None>
+    <None Include="json\json_internalmap.inl">
+      <Filter>源文件\json</Filter>
+    </None>
+    <None Include="json\json_valueiterator.inl">
+      <Filter>源文件\json</Filter>
+    </None>
+  </ItemGroup>
+</Project>
