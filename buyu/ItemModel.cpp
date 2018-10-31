@@ -17,7 +17,7 @@ ItemModel::~ItemModel()
 void ItemModel::Bind(ItemCache* itemManager, BulletCache* bulletManager, MessageModel* message, SendModel* send) {
 	Message = message;
 	ItemManager = itemManager;
-	EventNotify.Bind(send);
+	EventNotify.Bind(this, send);
 	Follow.Bind(this, &Move, &Frozen, &Pos, message);
 	Move.Bind(this, &Attack, &Pos, &Frozen, message);
 	Attack.Bind(this, bulletManager, &Move, &Pos, &Frozen, message);
@@ -35,6 +35,9 @@ bool ItemModel::Init(SpawnMessage* pack) {
 	Type = pack->Type;
 	SpawnId = pack->SpawnId;
 	SkillGroup = pack->SkillPack;
+	NickName = pack->NickName;
+	GameId = pack->GameId;
+	UserId = pack->UserId;
 
 	for (auto& iter : SkillGroup) {
 		auto& skill = iter.second;
@@ -53,7 +56,7 @@ bool ItemModel::Init(SpawnMessage* pack) {
 	LV.			Init(pack->LVEnable, pack->LV, pack->EXP);
 	DMG.		Init(pack->DMG);
 	Mul.		Init(true,pack->MulList, pack->Multiple);
-	EventNotify.Init(pack->EventNotifyEnable, Id);
+	EventNotify.Init(pack->EnableSendMsg, pack->EnableWriteScore);
 	//ItemAttackState = AttackState_None;
 	ItemMoveState = ItemState_None;
 	return true;
@@ -111,4 +114,8 @@ void ItemModel::Back() {
 		skill->Back();
 	}
 	SkillGroup.clear();
+}
+void ItemModel::LeaveRoom() {
+	EventNotify.WriteScore(Score.GetWinLoseScore(), 0);
+	Score.ResetWinLoseScore();
 }

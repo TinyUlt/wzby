@@ -35,6 +35,7 @@ public:
 	S_SpawnItem* GetPack();
 
 	void SetPath(S_MovePosList* posList);
+	void LeaveRoom();
 	//void CalculateAndSetPath(S_MonsterTerminal* data);
 	void Back();
 	bool Enable;
@@ -44,6 +45,10 @@ public:
 	int Frame;
 	int SpawnId;
 	int StartFrame;
+
+	string NickName;
+	DWORD GameId;
+	DWORD UserId;
 
 	ItemTeam TeamId;
 	MoveState ItemMoveState;//-1待创建， 0活着，1 路径走完， 2 被杀死

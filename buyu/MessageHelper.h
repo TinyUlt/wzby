@@ -38,6 +38,9 @@ public:
 };
 class SpawnMessage {
 public:
+	string NickName;
+	DWORD GameId;
+	DWORD UserId;
 	//int Id;
 	int Frame;
 	int TeamId;
@@ -60,7 +63,8 @@ public:
 	bool BeatenEnable;
 	bool FollowEnable;
 	bool FrozenEnable;
-	bool EventNotifyEnable;
+	bool EnableSendMsg;
+	bool EnableWriteScore;
 	bool HPEnable;
 	bool LVEnable;
 	bool AutoAttack;

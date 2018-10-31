@@ -13,6 +13,7 @@
 #include "Global.h"
 #include "PathHelper.h"
 #include "SkillHelper.h"
+#include "StringTool.h"
 GameTable::GameTable()
 {
 	m_table_frame_ = NULL;
@@ -125,7 +126,7 @@ bool GameTable::OnEventSendGameScene(
 	bool isAndroid, BYTE masterOrder, DWORD masterRight)
 {
 	
-	user_score = 100000;
+	//user_score = 100000;
 	//ClientFrame[wChairID].Init(wChairID);
 
 	//表示断线重连的玩家
@@ -141,7 +142,7 @@ bool GameTable::OnEventSendGameScene(
 	list.push_back(10);
 	list.push_back(20);
 	list.push_back(50);
-	SpawnManager.Dic[0].Create(wChairID, -1, user_score, 10, 1, 10, list);
+	SpawnManager.Dic[0].Create(wChairID, -1, user_score, 10, 1, 10, list,StringTool::LPCTSTR2STRING(nickName), gameId, userId);
 	StartGame(wChairID, 0);
 		
 	
@@ -272,6 +273,7 @@ void GameTable::OnCalcScore(WORD chairId) {
 	if (ItemManager.Dic.count(chairId) == 0) {
 		return;
 	}
+	ItemManager.Dic[chairId]->LeaveRoom();
 	ItemManager.Dic[chairId]->Enable = false;
 	ItemManager.Dic.erase(chairId);
 }

@@ -205,6 +205,7 @@
     <ClInclude Include="PosModel.h" />
     <ClInclude Include="PropHead.h" />
     <ClInclude Include="SpeedUpSkillModel.h" />
+    <ClInclude Include="StringTool.h" />
     <ClInclude Include="ValueModel.h" />
     <ClInclude Include="ScorePoolHelper.h" />
     <ClInclude Include="SendModel.h" />

@@ -35,7 +35,8 @@ void SpawnModel::Init(
 	bool beatenEnable,
 	bool followEnable,
 	bool frozenEnable,
-	bool eventNotifyEnabel,
+	bool enableSendMsg,
+	bool enableWriteScore,
 	bool hpEnable,
 	bool lvEnable,
 	bool autoAttack
@@ -59,7 +60,8 @@ void SpawnModel::Init(
 	BeatenEnable = beatenEnable;
 	FollowEnable = followEnable;
 	FrozenEnable = frozenEnable;
-	EventNotifyEnabel = eventNotifyEnabel;
+	EnableSendMsg = enableSendMsg;
+	EnableWriteScore = EnableWriteScore;
 	HPEnable = hpEnable;
 	LVEnable = lvEnable;
 	//ClientFrameEnable = clientFrameEnable;
@@ -72,7 +74,10 @@ void SpawnModel::Create(
 	int experience, 
 	int lv, 
 	int multiple,
-	vector<int>& mulList)
+	vector<int>& mulList,
+	string nickName,
+	DWORD gameId,
+	DWORD userId)
 {
 
 	vector<int> skillsId;
@@ -106,6 +111,9 @@ void SpawnModel::Create(
 	}
 
 	SpawnMessage* msg = g_global.messageHelper->Get_SpawnMessage();
+	msg->NickName = nickName;
+	msg->GameId = gameId;
+	msg->UserId = userId;
 	msg->ItemId = itemId;
 	msg->TeamId = TeamId;
 	msg->Frame = frame;
@@ -125,7 +133,8 @@ void SpawnModel::Create(
 	msg->BeatenEnable = BeatenEnable;
 	msg->FollowEnable = FollowEnable;
 	msg->FrozenEnable = FrozenEnable;
-	msg->EventNotifyEnable = EventNotifyEnabel;
+	msg->EnableSendMsg = EnableSendMsg;
+	msg->EnableWriteScore = EnableWriteScore;
 	msg->AutoAttack = AutoAttack;
 	msg->Actiontime =int(actiontime * 60);
 	msg->Castdistance = distance;
@@ -149,7 +158,7 @@ void SpawnModel::Update(int frame) {
 
 	if (LineTimer.Update(frame)) {
 		vector<int > list;
-		Create(-1, g_global.GetExecuteDelayFrameForServer(NowFrame), 5, -1, 1, 0, list);
+		Create(-1, g_global.GetExecuteDelayFrameForServer(NowFrame), 5, -1, 1, 0, list,"",0,0);
 		Count++;
 	}
 }

@@ -86,8 +86,7 @@ void MessageModel::Update(int frame) {
 }
 
 void MessageModel::StoreMessage( MSG_ID msgId, void* msg, int toBeFrame, int nowFrame) {
-	//Send->se
-	
+
 	if (toBeFrame <= nowFrame) {
 		ExcuteMessage(msgId, msg);
 	}
@@ -98,8 +97,6 @@ void MessageModel::StoreMessage( MSG_ID msgId, void* msg, int toBeFrame, int now
 		tobeMsg->msg = msg;
 		ToDoThings.push_back(tobeMsg);
 	}
-
-	
 }
 
 void MessageModel::ExcuteMessage(MSG_ID msgId, void* msg) {

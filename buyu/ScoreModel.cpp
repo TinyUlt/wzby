@@ -31,6 +31,7 @@ bool ScoreModel::TrySubScore(LONGLONG score) {
 		return false;
 	}
 	Value -= score;
+	this->WinLoseScore -= score;
 	return true;
 }
 LONGLONG ScoreModel::GetScore() {
@@ -38,4 +39,7 @@ LONGLONG ScoreModel::GetScore() {
 }
 LONGLONG ScoreModel::GetWinLoseScore() {
 	return WinLoseScore;
+}
+void ScoreModel::ResetWinLoseScore() {
+	WinLoseScore = 0;
 }

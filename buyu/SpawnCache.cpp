@@ -35,6 +35,7 @@ void SpawnCache::Init() {
 			true,
 			true,
 			true,
+			true,
 			false
 		);
 
@@ -64,6 +65,7 @@ void SpawnCache::Init() {
 			false,
 			false,
 			false,
+			false,
 			true
 		);
 
@@ -87,6 +89,7 @@ void SpawnCache::Init() {
 			true,
 			true,
 			true,
+			false,
 			false,
 			false,
 			false,
@@ -116,6 +119,7 @@ void SpawnCache::Init() {
 			false,
 			false,
 			false,
+			false,
 			true
 		);
 
@@ -141,6 +145,7 @@ void SpawnCache::Init() {
 			false,
 			false,
 			false,
+			false,
 			true
 		);
 
@@ -163,6 +168,7 @@ void SpawnCache::Init() {
 			true,
 			true,
 			true,
+			false,
 			false,
 			false,
 			false,
@@ -194,6 +200,7 @@ void SpawnCache::Init() {
 			false,
 			false,
 			false,
+			false,
 			true
 			);
 
@@ -220,6 +227,7 @@ void SpawnCache::Init() {
 			false,
 			false,
 			false,
+			false,
 			true
 		);
 
@@ -242,6 +250,7 @@ void SpawnCache::Init() {
 			true,
 			false,
 			true,
+			false,
 			false,
 			false,
 			false,

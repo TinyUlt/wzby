@@ -18,7 +18,9 @@ public:
 
 	//void SendTestDelayMsg(WORD wChairID, MSG_ID id, google::protobuf::Message* msg);
 	//void SendMsg(WORD wChairID, MSG_ID id, google::protobuf::Message* msg);
+
 	void SendMsgEx(int itemId, MSG_ID msgId, google::protobuf::Message* msg);
+	void WriteScore(WORD itemId, LONGLONG score, LONGLONG grade);
 	//void Broadcast(WORD wChairID, MSG_ID id, google::protobuf::Message* msg);
 
 	ITableFrame* m_table_frame_;

@@ -4,16 +4,19 @@
 using namespace gt_msg;
 
 class SendModel;
+class ItemModel;
 class EventNotifyModel
 {
 public:
 	EventNotifyModel();
 	~EventNotifyModel();
-	void Bind(SendModel* send);
-	void Init(bool enable,int id);
+	void Bind(ItemModel* host,SendModel* send);
+	void Init(bool enableSendMsg, bool enableWriteScore);
 	void SendMsg(MSG_ID msgId, google::protobuf::Message* msg);
-	bool Enable;
-	int Id;
+	void WriteScore(LONGLONG score, LONGLONG grade);
+	bool EnableSendMsg;
+	bool EnableWriteScore;
 	SendModel* Send;
+	ItemModel* Host;
 };
 

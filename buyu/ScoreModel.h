@@ -14,6 +14,7 @@ public:
 	bool TrySubScore(LONGLONG score);
 	LONGLONG GetScore();
 	LONGLONG GetWinLoseScore();
+	void ResetWinLoseScore();
 	
 private:
 

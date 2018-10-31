@@ -26,7 +26,8 @@ public:
 		bool beatenEnable,
 		bool followEnable,
 		bool frozenEnable, 
-		bool eventNotifyEnabel,
+		bool enableSendMsg,
+		bool enableWriteScore,
 		bool hpEnable,
 		bool lvEnable,
 		bool autoAttack
@@ -39,7 +40,10 @@ public:
 		int experience,
 		int lv,
 		int multiple,
-		vector<int>& mulList
+		vector<int>& mulList,
+		string nickName,
+		DWORD gameId,
+		DWORD userId
 	);
 	PosModel Pos;
 	TimerModel Timer;
@@ -65,7 +69,8 @@ public:
 	bool BeatenEnable;
 	bool FollowEnable;
 	bool FrozenEnable;
-	bool EventNotifyEnabel;
+	bool EnableSendMsg;
+	bool EnableWriteScore;
 	bool HPEnable;
 	bool LVEnable;
 	bool AutoAttack;

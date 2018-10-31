@@ -201,9 +201,6 @@
     <ClCompile Include="ExperienceModel.cpp">
       <Filter>源文件\Models\Foundation</Filter>
     </ClCompile>
-    <ClCompile Include="EventNotifyModel.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="PosModel.cpp">
       <Filter>源文件\Models\Propety</Filter>
     </ClCompile>
@@ -260,6 +257,9 @@
     </ClCompile>
     <ClCompile Include="ChongFengXianZhenSkillModel.cpp">
       <Filter>源文件\Models\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="EventNotifyModel.cpp">
+      <Filter>源文件\Models\Foundation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -395,9 +395,6 @@
     <ClInclude Include="ExperienceModel.h">
       <Filter>头文件\Models\Foundation</Filter>
     </ClInclude>
-    <ClInclude Include="EventNotifyModel.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ItemCache.h">
       <Filter>头文件\Cache</Filter>
     </ClInclude>
@@ -454,6 +451,12 @@
     </ClInclude>
     <ClInclude Include="ChongFengXianZhenSkillModel.h">
       <Filter>头文件\Models\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="EventNotifyModel.h">
+      <Filter>头文件\Models\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="StringTool.h">
+      <Filter>头文件\Tools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

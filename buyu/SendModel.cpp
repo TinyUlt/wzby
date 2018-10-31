@@ -72,6 +72,30 @@ void SendModel::SendMsgEx(int itemId, MSG_ID msgId, google::protobuf::Message* m
 	}
 
 }
+void SendModel::WriteScore(WORD itemId, LONGLONG score, LONGLONG grade) {
+	tagScoreInfo score_info;
+	memset(&score_info, 0, sizeof(tagScoreInfo));
+	score_info.lScore = score;
+	score_info.lGrade = grade;
+	if (score > 0L) {
+
+		score_info.cbType = SCORE_TYPE_WIN;
+	}
+	else if (score < 0L) {
+
+		score_info.cbType = SCORE_TYPE_LOSE;
+	}
+	else
+	{
+		score_info.cbType = SCORE_TYPE_DRAW;
+	}
+	if (m_table_frame_ != NULL) {
+		m_table_frame_->WriteUserScore(itemId, score_info);
+
+		
+	}
+	
+}
 //void SendModel::SendMsg(WORD wChairID, MSG_ID id, google::protobuf::Message* msg)
 //{
 //	//111111
